@@ -1,7 +1,7 @@
 require 'json'
 
-module Urban
-  class Dictionary
+module UrbanRouter
+  class Engine
 
     def initialize
       @con = Faraday.new do |faraday|
