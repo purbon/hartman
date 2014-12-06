@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 gemspec
 
+gem 'lita-twitter'
+
 #gem "lita"
 
 # Uncomment to use the HipChat adapter
