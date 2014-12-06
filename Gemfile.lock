@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     hartman (0.0.1)
+      faraday (~> 0)
       lita (~> 4.0)
 
 GEM
