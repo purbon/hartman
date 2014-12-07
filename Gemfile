@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 gemspec
 
+gem 'capistrano', '~> 3.3.0'
+
 gem 'lita-twitter'
 
 #gem "lita"
