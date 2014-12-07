@@ -1,6 +1,7 @@
 require 'hartman/urban/router'
 require 'hartman/weather/router'
 require 'hartman/giphy/router'
+require 'hartman/xkcd/router'
 
 module Lita
   module Handlers
@@ -18,12 +19,14 @@ module Lita
       include UrbanRouter
       include WeatherRouter
       include GiphyRouter
+      include XkcdRouter
 
       route(/^define\s+me\s+(.+)/, :defineme, :help => { "HartmanBot: define me {WORD}" => "check the Urban Dictionary" })
       route(/weather\s+in\s+(.+)\?$/, :weatherin, :help => { "HartmanBot: weather in {PLACE}?" => "check the weather in a given place" })
       route(/image\s+me\s+in\s+(.*)/, :imageme, :help => { "HartmanBot: image me {WORD}" => "search for funny images"})
       route(/image\s+me\s+(.*)/, :imageme)
       route(/image\s+me\s+with\s+a\s+(.*)/, :imageme)
+      route(/xkcd/, :xkcdme, :help => { "HartmanBot: xkcd" => "Finds a random XKCD commic"})
       route(/^ping/, :ping, :help => { "HartmanBot: ping" => "checking Hartman health" })
 
       def ping(response)

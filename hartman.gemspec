@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "faraday", "~> 0"
   spec.add_runtime_dependency "geocoder", '~> 1.2.6'
   spec.add_runtime_dependency "giphy", '~> 1.2.0'
+  spec.add_runtime_dependency 'xkcd', '~> 1.1.0'
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rack-test", '~> 0'
