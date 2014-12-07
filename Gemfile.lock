@@ -1,6 +1,7 @@
 GIT
   remote: git@github.com:purbon/lita-twitter.git
-  revision: 7358d8d4919d7eb1919844159c486b3df6435e1d
+  revision: 434ad9d53c4d36183431b18980dff68d3bd59762
+  branch: fix/refactor_msgs
   specs:
     lita-twitter (0.0.7)
       lita (>= 2.5)

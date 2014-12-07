@@ -3,7 +3,7 @@ gemspec
 
 gem 'capistrano', '~> 3.3.0'
 
-gem 'lita-twitter', :git => 'git@github.com:purbon/lita-twitter.git'
+gem 'lita-twitter', :git => 'git@github.com:purbon/lita-twitter.git', :branch => 'fix/refactor_msgs'
 
 #gem "lita"
 
