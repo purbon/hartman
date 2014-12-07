@@ -3,6 +3,7 @@ PATH
   specs:
     hartman (0.0.1)
       faraday (~> 0)
+      geocoder (~> 1.2.6)
       lita (~> 4.0)
 
 GEM
@@ -14,6 +15,7 @@ GEM
     equalizer (0.0.9)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
+    geocoder (1.2.6)
     http (0.6.3)
       http_parser.rb (~> 0.6.0)
     http_parser.rb (0.6.0)
