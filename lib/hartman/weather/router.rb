@@ -4,8 +4,8 @@ module WeatherRouter
 
   def weatherin(response)
     data = Engine.new.check(response.matches)
-    msg  = "At #{data['date']} is #{data['text']}, with #{((data['temp'].to_i-30)/2)}°C"
-    response.reply msg
+    msg  = "at #{data['date']} is #{data['text']}, with #{((data['temp'].to_i-30)/2)}°C"
+    response.reply "Dear #{response.message.source.user.name}, weather #{msg}"
   rescue
     puts "error retrieving data from yahoo weather"
   end
